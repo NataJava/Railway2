@@ -1,0 +1,5 @@
+public class SearchCarException extends Exception {
+    public SearchCarException (String message){
+        super (message);
+    }
+}

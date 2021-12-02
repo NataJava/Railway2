@@ -1,0 +1,16 @@
+public class Train {
+
+    int number;
+
+    public Train (int number) {
+        this.number=number;}
+
+    public void search (int number, int carriage) throws SearchCarException {
+        System.out.println ("Это какой номер вагона?  " + carriage);
+
+        if (carriage==number) {
+            System.out.println ("Вы на месте");
+        }
+        else throw new SearchCarException ("Идите дальше");
+    }
+}

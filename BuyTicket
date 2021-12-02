@@ -1,0 +1,12 @@
+public class BuyTicket implements Buy {
+
+        String ticket;
+
+        public BuyTicket (String ticket) {
+            this.ticket=ticket;
+        }
+        public void buy (String ticket) {
+            ticket=(ticket.equals("есть"))?"Поеду на поезде":"Останусь дома";
+            System.out.println(ticket);
+        }
+}

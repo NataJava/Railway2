@@ -1,0 +1,36 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+
+        //Выберите "есть" или "нет" наличие билета
+        BuyTicket ticket = new BuyTicket ("");
+        ticket.buy("есть");
+
+        System.out.println();
+        
+        //Прибытие/отправление поезда в зависимости от времени:09.00-прибытие, 19.00-отправление
+        Time o_clock = new Time(0);
+        try {
+        o_clock.watchTime(18.00);
+        } catch (ArriveAndLeaveException ex) {
+            System.out.println(ex);
+        }
+        System.out.println();
+
+        //Поиск своего вагона
+        Train number=new Train (0);
+        try {
+        number.search(5,9);
+        } catch (SearchCarException e) {
+            System.out.println(e);
+        }
+
+        System.out.println();
+
+        //Проверка документов:"есть" или "нет"
+        Ticket document=new Ticket ("");
+        document.check("есть");
+
+    }
+}

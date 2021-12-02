@@ -1,0 +1,5 @@
+public class ArriveAndLeaveException extends Exception {
+    public ArriveAndLeaveException (String message){
+        super (message);
+    }
+}

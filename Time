@@ -1,0 +1,17 @@
+public class Time  {
+
+    double oСlock;
+
+    public Time (double oСlock) {
+        this.oСlock=oСlock;
+    }
+    public void watchTime (double oСlock) throws ArriveAndLeaveException {
+        if (oСlock==9.00){
+            System.out.println("Поезд прибывает");}
+        else if(oСlock==19.00){
+            System.out.println("Поезд отправляется");}
+        else
+            throw new ArriveAndLeaveException ("Поезда ни прибывают и ни отправляются");
+
+    }
+}
